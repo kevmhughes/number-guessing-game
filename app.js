@@ -39,6 +39,8 @@ inputField.addEventListener("change", (e) => {
   if (estoyJugando == true && e.target.value < 101) {
     if (e.target.value == numeroCorrecto) {
       pElement.textContent = "You guessed correctly!";
+      estoyJugando = false;
+      inputField.disabled = "true";
     } else if (e.target.value < numeroCorrecto) {
       pElement.textContent = "Too Low! Try again!";
       numIntentos--;
@@ -54,8 +56,7 @@ inputField.addEventListener("change", (e) => {
     document.querySelector(".guesses").textContent = prevGuesses.join(" ");
     // style node with multiple styles --> var styles = backgroundColor: "purple", etc. <--
     Object.assign(pElement.style, styles);
-    inputField.value = ""
-
+    inputField.value = "";
   }
 
   // checks inputted number is within possible range
