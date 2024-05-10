@@ -54,6 +54,8 @@ inputField.addEventListener("change", (e) => {
     document.querySelector(".guesses").textContent = prevGuesses.join(" ");
     // style node with multiple styles --> var styles = backgroundColor: "purple", etc. <--
     Object.assign(pElement.style, styles);
+    inputField.value = ""
+
   }
 
   // checks inputted number is within possible range
