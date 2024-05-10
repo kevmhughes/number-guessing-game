@@ -15,7 +15,7 @@ let inputField = document.querySelector("#guessField");
 
 // selects p element
 var pElement = document.querySelector(".lowOrHi");
-// adds multiple styles to p element --> Object.assign(toBeStyled.style, styles) <--
+// adds multiple styles to p element --> Object.assign(pElement.style, styles); <--
 var styles = {
   backgroundColor: "purple",
   fontSize: "30px",
