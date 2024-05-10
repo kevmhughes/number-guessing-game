@@ -5,7 +5,7 @@ let estoyJugando = true;
 let numeroCorrecto = Math.floor(Math.random() * 100);
 
 // sets number of permitted attempts
-let numIntentos = 2;
+let numIntentos = 10;
 
 // displays initial number of attempts left
 document.querySelector(".lastResult").textContent = numIntentos;
